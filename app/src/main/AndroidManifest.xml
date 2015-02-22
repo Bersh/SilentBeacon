@@ -14,7 +14,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme">
         <activity
-            android:name="com.yalantis.silentbeacon.MainActivity"
+            android:name=".activity.MainActivity"
             android:label="@string/app_name"
             android:launchMode="singleInstance">
             <intent-filter>
@@ -23,10 +23,16 @@
             </intent-filter>
         </activity>
 
-        <service android:enabled="true" android:name=".SilentBeaconService" />
-        <receiver android:name=".BootReceiver" android:enabled="true" android:exported="false">
+        <service android:enabled="true" android:name=".service.SilentBeaconService" />
+        <receiver android:name=".receiver.BootReceiver" android:enabled="true" android:exported="false">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".receiver.RingerModeChangedReceiver" >
+            <intent-filter>
+                <action android:name="android.media.RINGER_MODE_CHANGED" />
             </intent-filter>
         </receiver>
     </application>

@@ -1,8 +1,10 @@
-package com.yalantis.silentbeacon;
+package com.yalantis.silentbeacon.receiver;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
+
+import com.yalantis.silentbeacon.service.SilentBeaconService;
 
 
 public class BootReceiver extends BroadcastReceiver {

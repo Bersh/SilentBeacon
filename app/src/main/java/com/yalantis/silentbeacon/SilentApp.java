@@ -3,6 +3,8 @@ package com.yalantis.silentbeacon;
 import android.app.Application;
 import android.content.Intent;
 
+import com.yalantis.silentbeacon.service.SilentBeaconService;
+
 public class SilentApp extends Application {
 
     @Override
