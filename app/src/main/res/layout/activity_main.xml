@@ -4,33 +4,54 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
-    android:padding="20dp">
+    android:background="#51C3C4"
+    android:paddingLeft="50dp"
+    android:paddingRight="50dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:gravity="center_vertical"
+        android:text="@string/app_name"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:layout_marginBottom="60dp"/>
 
     <Button
         android:id="@+id/btn_start_service"
+        android:background="@android:drawable/btn_default"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="60dp"
+        android:textColor="#3BA790"
+        android:textSize="20sp"
+        android:layout_marginBottom="10dp"
         android:text="Start service" />
 
     <Button
         android:id="@+id/btn_stop_service"
+        android:background="@android:drawable/btn_default"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="60dp"
+        android:textColor="#B8647C"
+        android:textSize="20sp"
         android:text="Stop service" />
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp">
+        android:layout_marginTop="20dp">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
-            android:gravity="center_vertical"
+            android:maxWidth="220dp"
+            android:gravity="center"
             android:lines="2"
-            android:text="Switch sound on when leaving zone"
-            android:textColor="@android:color/black"
+            android:text="Switch sound on when leaving beacon zone"
+            android:textColor="@android:color/white"
             android:textSize="16sp" />
 
         <Switch
